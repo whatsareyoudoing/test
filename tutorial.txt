@@ -1,0 +1,10 @@
+tutorial menjalankan api-crud
+
+1 buat database mysql dengan nama tes_ttg
+2 buka file .env edit nama database dangan tes_ttg
+3 jalankan cmd pada direktori project, pastikan menggunakan php 7
+4 jalankan perintah composer install
+5 jalankan perintah php artisan migrate
+6 jalankan perintah php artisan serve
+7 nayalakan xampp apache dan mysql
+8 buka localhost:8000/

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Stopwatch</title>
+    <style>
+        .stopwatch {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .time {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <span class="time">00:00:000</span>
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="reset">Reset</button>
+        <button class="flag">Flag</button>
+    </div>
+    <ul class="flags"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

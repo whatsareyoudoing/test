@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polabintang</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="jumlahBaris">Jumlah Baris:</label>
+    <input type="number" id="jumlahBaris" min="1">
+    <button onclick="buatBangun()">Buat Pola</button>
+    <br/>
+    <br/>
+    <br/>
+    <div id="hasil"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function buatBangun() {
+            let jumlahBaris = $('#jumlahBaris').val();
+            
+            $('#hasil').html('');
+
+            for (let i = jumlahBaris; i > 0; i--) {
+                let bintang = '*'.repeat(2 * i - 1);
+                $('#hasil').append(bintang + '<br>');
+            }
+        }
+
+        buatBangun();
+    </script>
+
+</body>
+</html>
